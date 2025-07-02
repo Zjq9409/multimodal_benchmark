@@ -426,7 +426,8 @@ def benchmark(llm_urls, model, prompt, num_requests, max_concurrent_requests, ma
 # 设置benchmark参数
 LLM_URLS = [f"http://localhost:{PORT}/v1/completions" for PORT in [8000]]
 
-MODEL = "/llm/models/" + model_name
+#MODEL = "/llm/models/" + model_name
+MODEL = model_name
 MAX_TOKENS = output_length  # 修改 MAX_TOKENS 为 output_length
 
 # if "Qwen" not in MODEL and "chatglm" not in MODEL:
