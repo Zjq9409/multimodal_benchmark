@@ -25,7 +25,7 @@ done
 python ./vlm_benchmark.py  \
 --image_path ./resized_image.jpg  \
 --prompt "简要描述图中的内容" \
---model /data/models/Qwen2-VL-7B-Instruct \
+--model /llm/models/Qwen2-VL-7B-Instruct/ \
 --served-model-name Qwen2-VL-7B-Instruct \
 --batch_size ${bs} \
 --port 8000 \
