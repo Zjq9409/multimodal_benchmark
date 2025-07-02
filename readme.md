@@ -20,3 +20,14 @@ python ./vlm_benchmark.py \
 --host 127.0.0.1
 done
 ```
+如果指定了served-model-name名称，测试脚本如下
+```
+python ./vlm_benchmark.py  \
+--image_path ./resized_image.jpg  \
+--prompt "简要描述图中的内容" \
+--model /data/models/Qwen2-VL-7B-Instruct \
+--served-model-name Qwen2-VL-7B-Instruct \
+--batch_size ${bs} \
+--port 8000 \
+--host 127.0.0.1
+```
